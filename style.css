@@ -1,0 +1,140 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.row{
+  display: flex;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li{
+  padding: 10px 25px;
+}
+
+a, a:hover{
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+
+.fa-solid.fa-bars{
+  display: none;
+}
+
+.navbar{
+  background: green;
+  padding: 10px 25px;
+}
+
+h3{
+  padding-top: 16px;
+  line-height: 3px;
+  color: #fff;
+  margin-right: 200px;
+}
+
+
+@media screen and (max-width: 768px){
+  
+  .two.columns{
+    width: 100%;
+  }
+
+  ul{
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  li{
+    width: 100%;
+    padding: 10px 25px;
+  }
+
+  #mobMenu{
+    display: none;
+    transition: .2s;
+  }
+
+  .fa-solid.fa-bars{
+    display: block;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #fff;
+    cursor: pointer;
+    padding-top: 9px;
+  }
+  h3{
+    text-align: center;
+  }
+
+  .navbar{
+    /* padding: 0; */
+  }
+  
+}
+
+
+/* create element */
+.create h1{
+  padding-top: 40px;
+  text-align: center;
+}
+
+/* count down timer */
+
+.count-down-container{
+  background: linear-gradient(to bottom rgba(#f5f5b2, #f73f3f));
+  height: 100vh;
+}
+
+.count-down-row{
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 40px 60px;
+}
+
+.count-down-row h1{
+  font-size: 50px;
+}
+
+.count-down-row h4{
+  font-size: 30px;
+}
+
+.days, .hours, .mins, .seconds{
+  text-align: center;
+}
+
+
+
+.todo-container {
+ margin-top: 100px ;
+}
+
+
+.div{
+  height:100px;
+  width : 100px;
+  border-radius: 50%;
+  background-color: #f73f3f;
+}
